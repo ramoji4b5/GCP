@@ -29,6 +29,6 @@ gsutil ls gs://SOURCE_BUCKET_NAME/*.jpg | head -n 100 | gsutil -m cp -I gs://DES
 
 ## To list the names of images in a GCS bucket using the gsutil command-line tool, you can use the ls command with the -p or --projection=full option to include the full object name in the output. Here is an example command to list the names of all JPEG images in a bucket:
 
-gsutil ls -p gs://BUCKET_NAME/*.jpg
+gsutil ls -l gs://BUCKET_NAME/*.jpg
 
 
